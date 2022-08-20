@@ -56,7 +56,7 @@ router.post(
             });
             break;
           case "2":
-            bot.say("Hello. Please leave a message after the beep.");
+            bot.say("Please leave a message after the beep.");
             bot.record({
               timeout: 5,
               maxLength: 5,
