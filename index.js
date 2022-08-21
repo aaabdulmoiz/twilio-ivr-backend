@@ -15,6 +15,6 @@ app.use("/api/twilio", twilioRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(8000, () => {
-  console.log("Server is up at Port 8000.");
+app.listen(process.env.PORT, () => {
+  console.log("Server is up at Port.", process.env.PORT);
 });
