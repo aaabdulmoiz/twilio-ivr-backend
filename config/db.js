@@ -1,7 +1,7 @@
+import "dotenv/config";
 import mongoose from "mongoose";
 
-const dbUri =
-  "mongodb+srv://moiz:Pakistan123@collaboivd.sojfe.mongodb.net/?retryWrites=true&w=majority";
+const dbUri = process.env.MONGO_URI;
 
 export const connectDb = async () => {
   try {
