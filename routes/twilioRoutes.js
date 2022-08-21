@@ -68,6 +68,7 @@ router.post(
             });
             break;
           default:
+            //if any other number is dialed, the call would again ask to Press 1 or 2
             bot.redirect("/api/twilio/");
         }
       }
